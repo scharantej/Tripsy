@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Planner</title>
+</head>
+<body>
+<h1>Travel Planner</h1>
+<form action="/destination" method="post">
+<label for="destination">Destination:</label>
+<input type="text" name="destination" id="destination">
+<input type="submit" value="Add">
+</form>
+<ul>
+{% for destination in destinations %}
+<li><a href="/destination/{{ destination.id }}">{{ destination.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
