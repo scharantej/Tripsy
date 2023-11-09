@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Planner</title>
+</head>
+<body>
+<h1>Route</h1>
+<ul>
+{% for destination in destinations %}
+<li>{{ destination.name }}</li>
+{% endfor %}
+</ul>
+<img src="/static/map.png" alt="Map of route">
+</body>
+</html>
+
