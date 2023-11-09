@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Planner</title>
+</head>
+<body>
+<h1>{{ destination.name }}</h1>
+<p>{{ destination.weather }}</p>
+<ul>
+{% for attraction in destination.attractions %}
+<li>{{ attraction.name }}</li>
+{% endfor %}
+</ul>
+<ul>
+{% for restaurant in destination.restaurants %}
+<li>{{ restaurant.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
